@@ -13,6 +13,6 @@ collections:
       - {label: "Tagy", name: "tags", widget: "hidden", default: "blog"}
       - {label: "Titulek stránky", name: "title", widget: "string"}
       - {label: "Datum publikace", name: "date", widget: "datetime"}
-      - {label: "Obrázek", name: "foto", widget: "image" required: false}
+      - {label: "Obrázek", name: "foto", widget: "image", required: false}
       - {label: "Perex", name: "perex", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
