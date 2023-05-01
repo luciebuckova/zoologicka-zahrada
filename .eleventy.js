@@ -8,6 +8,9 @@ module.exports = function(eleventyConfig) {
 	// Zkopírovat css/ to _site/css/
 	eleventyConfig.addPassthroughCopy("css");
 
+  	// Zkopírovat admin/ to _site/admin/
+	eleventyConfig.addPassthroughCopy("admin");
+
 	// Zkopírovat všechny *.js soubory na stejné umístění do _site
 	// eleventyConfig.addPassthroughCopy("**/*.js");
 

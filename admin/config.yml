@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images/uploads"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - {label: "Šablona", name: "layout", widget: "hidden", default: "layouts/clanek.njk"}
+      - {label: "Tagy", name: "tags", widget: "hidden", default: "blog"}
+      - {label: "Titulek stránky", name: "title", widget: "string"}
+      - {label: "Datum publikace", name: "date", widget: "datetime"}
+      - {label: "Obrázek", name: "foto", widget: "image" required: false}
+      - {label: "Perex", name: "perex", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
